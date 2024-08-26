@@ -14,12 +14,17 @@ for _ in range(link):
 #방문여부
 visited = [0]*(computer+1)
 
-#탐색
+#깊이 우선 탐색
 def dfs(start):
     visited[start] = 1
     for i in range(1, computer + 1):
         if visited[i] == 0 and graph[start][i] == 1:
             dfs(i)
+
+
+#너비 우선 탐색
+
+
 
 dfs(start)
 answer = visited.count(1)
