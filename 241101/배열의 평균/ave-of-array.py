@@ -22,4 +22,6 @@ for i in range(len(lista)):
     for j in range(len(lista[i])):
         sum+=lista[i][j]
 
-print(sum / (len(lista) * len(lista[0])) )
+
+answer = sum / (len(lista) * len(lista[0]))
+print(f"{answer:.1f}")
