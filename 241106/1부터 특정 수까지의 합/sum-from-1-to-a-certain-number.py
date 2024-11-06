@@ -1,4 +1,7 @@
-def func(num):
-    return num*(num+1)//20
+def func(N):
+    return N*(N+1) // 20
 
-print(func(int(input())))
+
+n = int(input())
+
+print(func(n))
